@@ -1,0 +1,72 @@
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+.header {
+  color: rgb(255, 255, 255);
+}
+.entry {
+  color: rgb(255, 255, 255);
+}
+
+.button1 {
+  margin-right: 3%;
+  float: right;
+  margin-right: 3%;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  cursor: pointer;
+}
+
+.header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.mainPageButton {
+    float: right;
+    margin-right: 3%;
+    padding: 0.3%;
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+body.light-mode {
+  background-color: rgb(255, 255, 255);
+}
+
+
+body.light-mode .header {
+  color: rgb(0, 0, 0);
+}
+body.light-mode .entry {
+  color: rgb(0, 0, 0);
+}
+
+body.light-mode .mainPageButton {
+    float: right;
+    padding: 0.3%;
+    background-color: rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+body.light-mode .button1 {
+  margin-right: 3%;
+  float: right;
+  margin-right: 3%;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  cursor: pointer;
+}
