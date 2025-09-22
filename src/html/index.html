@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="utf-8">
+  <title>Veebiprogrammeerimine</title>
+
+  <!-- 1) Theme class light/dark -->
+  <script>
+    const saved = localStorage.getItem("themeMode");
+    const useLight = saved === "true";
+    document.documentElement.classList.toggle("light-mode", useLight);
+  </script>
+
+  <!-- 2) Inline critical CSS for navbar and header -->
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: sans-serif;
+    }
+    .navbar {
+      display: flex;
+      background-color: #494242;
+      overflow: hidden;
+    }
+    .navbar a {
+      padding: 14px 16px;
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+    }
+    .header {
+      display: flex;  
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+    }
+  </style>
+
+  <!-- 3) Preload full stylesheet without blocking -->
+  <link rel="preload" href="styles.css" as="style" onload="this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="styles.css">
+  </noscript>
+</head>
+<body>
+
+  <div class="navbar">
+    <a class="home1" href="index.html">Home</a>
+    <a class="light1" onclick="toggleLightMode()">Light Mode</a>
+    <a class="login1" href="../forms/register.html">Login</a>
+    <div class="dropdown">
+      <button class="dropbtn">Contents</button>
+      <div class="dropdown-content">
+        <a href="./resurgence.html">Prime Resurgence</a>
+        <a href="#">Void trader</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+  </div>
+
+
+  <img src="../img/vp_banner_2025_TA.jpg">
+
+  <div class="header">
+    <h1>Sissejuhatus</h1>
+  </div>
+
+  <div class="introduction">
+    <p>
+      Leht on olemas, juhatuseks vaadake järgmist!
+      <a href="https://www.wikihow.com/breathing">linki</a>.
+    </p>
+  </div>
+
+  <hr>
+
+  <p>
+    Peale esimese õpetuse läbimist on järgneval
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">linkil</a>
+    juhised.
+  </p>
+
+  <br><br><br><br>
+
+  <p>Hello there! I didn't see you. Here’s some important information:</p>
+  <br><br>
+
+  <script src="../scripts/functions.js" defer></script>
+  <script src="../scripts/theme-toggle.js" defer></script>
+</body>
+</html>
