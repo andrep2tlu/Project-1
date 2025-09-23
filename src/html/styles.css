@@ -38,6 +38,44 @@ a:visited {
   color: white;
 }
 
+.banner {
+  display: flex;
+  justify-content: center;   /* optional: center horizontally */
+  align-items: center;       /* optional: center vertically */
+  height: 100px;  
+  width: 100%;   
+}
+
+
+.img1 {
+  display: flex;
+  gap: 10%;                   /* creates a 10% gap relative to the container’s width */
+  justify-content: center;   /* optional: center horizontally */
+  align-items: center;       /* optional: center vertically */
+  height: 400px;             /* set the container’s height */
+}
+
+.img1 img {
+  max-width: 100%;   /* never exceed container width */
+  max-height: 100%;  /* never exceed container height */
+  object-fit: contain; /* scale proportionally, no cropping */
+}
+
+.img2 {
+  display: flex;
+  display: flex;
+  gap: 10%; /* creates a 10% gap relative to the container’s width */
+  justify-content: center;   /* optional: center horizontally */
+  align-items: center;       /* optional: center vertically */
+  height: 400px;    
+}
+
+.img2 img {
+  max-width: 100%;   /* never exceed container width */
+  max-height: 100%;  /* never exceed container height */
+  object-fit: contain; /* scale proportionally, no cropping */
+}
+
 .header {
   display: flex;
   justify-content: space-between;
